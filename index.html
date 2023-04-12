@@ -8,6 +8,13 @@
   <!-- CDN VUE  -->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/3.2.47/vue.global.min.js' integrity='sha512-DJ2+sosWB5FnZAIeCWAHu2gxQ7Gi438oOZLcBQSOrW8gD0s7LIXDv/5RW76B3FcljF40BXnfqNIo6Dhp7dFHJg==' crossorigin='anonymous'></script>
 
+  <style>
+    .big {
+      transform: scale(1.5);
+    }
+
+  </style>
+
   <title>Vue Hello</title>
 </head>
 <body>
@@ -18,7 +25,7 @@
 
     <h1>{{message}}</h1>
 
-    <img :src = image alt="">
+    <img :src = image alt="" :class = "{'big' : active}" @click = 'active = !active'>
 
   </div>
 
